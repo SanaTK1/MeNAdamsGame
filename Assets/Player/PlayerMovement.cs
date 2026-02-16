@@ -1,3 +1,5 @@
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,12 +7,13 @@ public class PlayerMovement : MonoBehaviour
 {
 
     private float horizontal;
-    private float speed = 8f;
-    private float jumpingPower = 16f;
     private bool isFacingRight = true;
     private InputAction moveAction;
     private InputAction jumpAction;
+    private Animator animator;
     
+    [SerializeField] float speed = 8f;
+    [SerializeField] float jumpingPower = 16f;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask whatIsGround;
@@ -18,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        animator  = GetComponent<Animator>();
         jumpAction = InputSystem.actions.FindAction("Jump");
         moveAction =  InputSystem.actions.FindAction("Move");
     }
@@ -29,11 +33,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (jumpAction.WasPressedThisFrame() && IsGrounded())
         {
+            animator.SetTrigger("TakeOff");
             rb.linearVelocity =  new Vector2(rb.linearVelocity.x, jumpingPower);
         }
         
         if (jumpAction.WasReleasedThisFrame() && rb.linearVelocity.y > 0f)
         {
+            animator.ResetTrigger("TakeOff");
             rb.linearVelocity =  new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         }
     }
@@ -41,6 +47,8 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
+        animator.SetBool("IsRunning", Math.Abs(rb.linearVelocity.x) > 0);
+        animator.SetBool("IsJumping", !IsGrounded());
         Flip();
     }
 
