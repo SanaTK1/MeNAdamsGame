@@ -1,3 +1,5 @@
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -45,7 +47,8 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
-        animator.SetBool("IsRunning", rb.velocity.x > 0);
+        animator.SetBool("IsRunning", Math.Abs(rb.linearVelocity.x) > 0);
+        animator.SetBool("IsJumping", !IsGrounded());
         Flip();
     }
 
