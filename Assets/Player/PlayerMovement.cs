@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
         if (jumpAction.WasReleasedThisFrame() && rb.linearVelocity.y > 0f)
         {
             animator.ResetTrigger("TakeOff");
-            rb.linearVelocity =  new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.2f);
+            
         }
     }
 

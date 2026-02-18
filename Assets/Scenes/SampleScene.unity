@@ -1697,6 +1697,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2289536642359872409, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
+      propertyPath: gravityModifier
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -2289536642359872409, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
+      propertyPath: LowJumpMultiplier
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 782030779786066386, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7508154
@@ -1788,6 +1796,10 @@ PrefabInstance:
     - target: {fileID: 7462933220432640108, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
       propertyPath: speed
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 7462933220432640108, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
+      propertyPath: jumpingPower
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 8061788855745397838, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
       propertyPath: m_LocalRotation.w
