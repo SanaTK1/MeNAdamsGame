@@ -1745,6 +1745,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3285168614040847466, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
+      propertyPath: m_Name
+      value: GroundCheck
+      objectReference: {fileID: 0}
     - target: {fileID: 3489199915884729787, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
       propertyPath: m_Name
       value: Doll man 1
