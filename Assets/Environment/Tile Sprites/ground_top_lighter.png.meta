@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c2aaec249e1705645a24bc61cbffa0c8
+guid: 6a4a9127d934a654db55ce5a090343b0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6386843715075620286
-    second: ground_top_0
+      213: 2706544351968963098
+    second: IMG_0876_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ground_top_0
+      name: IMG_0876_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebdb4091580a2a850800000000000000
-      internalID: 6386843715075620286
+      spriteID: a1a23fb8fb39f8520800000000000000
+      internalID: 2706544351968963098
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ground_top_0: 6386843715075620286
+      IMG_0876_0: 2706544351968963098
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
