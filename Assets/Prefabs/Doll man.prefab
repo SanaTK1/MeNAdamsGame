@@ -328,7 +328,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8653719598885068355, guid: e5752e2c2f9c13d43b89831ff7c7ea28, type: 3}
       propertyPath: m_Name
-      value: Doll man 1
+      value: Doll man
       objectReference: {fileID: 0}
     - target: {fileID: -8624657447111268554, guid: e5752e2c2f9c13d43b89831ff7c7ea28, type: 3}
       propertyPath: m_LocalRotation.w
@@ -605,6 +605,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: e5752e2c2f9c13d43b89831ff7c7ea28, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7462933220432640108}
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: e5752e2c2f9c13d43b89831ff7c7ea28, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2289536642359872409}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: e5752e2c2f9c13d43b89831ff7c7ea28, type: 3}
 --- !u!4 &425294291923553487 stripped
 Transform:
@@ -750,11 +753,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63666b36eb45c55419771564ec2831d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  speed: 8
+  jumpingPower: 16
   rb: {fileID: 2866629746463425732}
   groundCheck: {fileID: 3228076712035132602}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &-2289536642359872409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3489199915884729787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97cae8b71a0e41b41878614fd1a03bd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerJumpModifiers
+  gravityModifier: 2.5
 --- !u!4 &4595044595363877680 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8624657447111268554, guid: e5752e2c2f9c13d43b89831ff7c7ea28, type: 3}

@@ -21,6 +21,9 @@ public class PlayerMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //QualitySettings.vSyncCount = 0;
+        //Application.targetFrameRate = 10;
+        
         animator  = GetComponent<Animator>();
         jumpAction = InputSystem.actions.FindAction("Jump");
         moveAction =  InputSystem.actions.FindAction("Move");
@@ -40,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
         if (jumpAction.WasReleasedThisFrame() && rb.linearVelocity.y > 0f)
         {
             animator.ResetTrigger("TakeOff");
-            rb.linearVelocity =  new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
+            rb.linearVelocity =  new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.2f);
         }
     }
 
