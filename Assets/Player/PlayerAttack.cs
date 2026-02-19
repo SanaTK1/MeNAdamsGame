@@ -25,15 +25,23 @@ public class PlayerAttack : MonoBehaviour
     private void Update()
     {
         //Checks to see if player wants to attack
-        if (attackButton.WasPressedThisFrame())
+        if (attackButton.WasPressedThisFrame() && timer <= 0)
         {
             Attack();
+        }
+        
+        if (timer > 0)
+        {
+            timer -= Time.deltaTime;
         }
     }
 
 
     private void Attack(){
-        //Acts almost like a net and catches all GameObjects that align based on given arguments
+        //Plays attack animation
+            anim.SetBool("IsAttacking", true);
+            
+            //Acts almost like a net and catches all GameObjects that align based on given arguments
             hits = Physics2D.CircleCastAll(attackTransform.position, 
                                                     attackRange, 
                                             transform.right,
@@ -51,11 +59,8 @@ public class PlayerAttack : MonoBehaviour
                     damageable.TakeDamage(attackDamage);
                 }
             }
-            
-        if (timer > 0)
-        {
-            timer -= Time.deltaTime;
-        }
+            //Sets attack on cooldown timer.
+            timer = cooldown;
     }
 
     private void OnDrawGizmosSelected()
@@ -65,7 +70,7 @@ public class PlayerAttack : MonoBehaviour
 
 
     //To be called by the Player movement script when attack button is pressed
-    /*public void attack()
+    public void attack()
     {
         if (timer <= 0)
         {
@@ -80,5 +85,5 @@ public class PlayerAttack : MonoBehaviour
     {
         anim.SetBool("IsAttacking", false);
     }
-*/
+
 }
