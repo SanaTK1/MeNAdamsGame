@@ -353,6 +353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlaceHolder Enemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 960263490442848608, guid: e442f5d3fdb43d542a0f985e7ee6d102, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16409,6 +16413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlaceHolder Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 960263490442848608, guid: e442f5d3fdb43d542a0f985e7ee6d102, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16866,7 +16874,7 @@ MonoBehaviour:
   attackRange: 1.5
   attackLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   attackDamage: 1
 --- !u!1001 &2590958842773555917
 PrefabInstance:
@@ -16920,6 +16928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlaceHolder Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 960263490442848608, guid: e442f5d3fdb43d542a0f985e7ee6d102, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16942,3 +16954,6 @@ SceneRoots:
   - {fileID: 2590958842773555917}
   - {fileID: 1714206942}
   - {fileID: 65655550}
+  - {fileID: 138297522}
+  - {fileID: 565877061}
+  - {fileID: 1559966036}
