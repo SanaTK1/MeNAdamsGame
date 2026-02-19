@@ -14199,7 +14199,7 @@ MonoBehaviour:
   attackRange: 1.5
   attackLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   attackDamage: 1
 --- !u!1001 &2590958842773555917
 PrefabInstance:
