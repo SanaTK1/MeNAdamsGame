@@ -6,7 +6,7 @@ public class PlayerAttack : MonoBehaviour
 {
     
     public Animator anim;
-    public float cooldown = 0.5f;
+    public float cooldown = 0.3f;
     private float timer;
     private InputAction attackButton;
     private RaycastHit2D[] hits;
