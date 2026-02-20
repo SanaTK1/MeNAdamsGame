@@ -15389,11 +15389,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2289536642359872409, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
       propertyPath: gravityModifier
-      value: 6
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -2289536642359872409, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
       propertyPath: LowJumpMultiplier
-      value: 4
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 782030779786066386, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15454,6 +15454,10 @@ PrefabInstance:
     - target: {fileID: 2352067588632776152, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866629746463425732, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
+      propertyPath: m_GravityScale
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3285168614040847466, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
       propertyPath: m_Name
@@ -15541,11 +15545,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7462933220432640108, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
       propertyPath: speed
-      value: 64
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 7462933220432640108, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
       propertyPath: jumpingPower
-      value: 32
+      value: 225
       objectReference: {fileID: 0}
     - target: {fileID: 8061788855745397838, guid: 852cc6e0afa21304c9662b5ce5a287e7, type: 3}
       propertyPath: m_LocalRotation.w
