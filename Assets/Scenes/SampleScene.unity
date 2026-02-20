@@ -13282,7 +13282,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.5
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 000000009df41783
@@ -17017,6 +17017,14 @@ PrefabInstance:
     - target: {fileID: 547995082374549515, guid: d9c163a0b0a360c43b7a005a7ec6b7ab, type: 3}
       propertyPath: m_PointLightInnerAngle
       value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 547995082374549515, guid: d9c163a0b0a360c43b7a005a7ec6b7ab, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 547995082374549515, guid: d9c163a0b0a360c43b7a005a7ec6b7ab, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[1]'
+      value: -2095582051
       objectReference: {fileID: 0}
     - target: {fileID: 1526127299450137287, guid: d9c163a0b0a360c43b7a005a7ec6b7ab, type: 3}
       propertyPath: m_LocalPosition.x
